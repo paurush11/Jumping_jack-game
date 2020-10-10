@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gavpi>
+  <Database />
+  <Action_Sequence name="jump" type="Action_Sequence" comment="use spacebar" random="False">
+    <Action type="KeyDown" value="Space" />
+    <Action type="Wait" value="20" />
+    <Action type="KeyUp" value="Space" />
+  </Action_Sequence>
+  <Trigger name="jump" value="jump" type="Phrase" comment="">
+    <Trigger_Event name="jump" type="Action_Sequence" value="" comment="" />
+  </Trigger>
+</gavpi>

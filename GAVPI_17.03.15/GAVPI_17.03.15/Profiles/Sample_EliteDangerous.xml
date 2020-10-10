@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gavpi>
+  <Database />
+  <Action_Sequence name="weapon type" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="Right" />
+    <Action type="KeyUp" value="Right" />
+  </Action_Sequence>
+  <Action_Sequence name="system type" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="Left" />
+    <Action type="KeyUp" value="Left" />
+  </Action_Sequence>
+  <Action_Sequence name="engine type" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="Up" />
+    <Action type="KeyUp" value="Up" />
+  </Action_Sequence>
+  <Action_Sequence name="toggle landing gear" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyPress" value="L" />
+    <Action type="Speak" value="landing gear." />
+  </Action_Sequence>
+  <Action_Sequence name="press LShiftKey" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="LShiftKey" />
+    <Action type="KeyUp" value="LShiftKey" />
+  </Action_Sequence>
+  <Action_Sequence name="press H" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="H" />
+    <Action type="KeyUp" value="H" />
+  </Action_Sequence>
+  <Action_Sequence name="press J" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="J" />
+    <Action type="KeyUp" value="J" />
+  </Action_Sequence>
+  <Action_Sequence name="press F" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="F" />
+    <Action type="KeyUp" value="F" />
+  </Action_Sequence>
+  <Action_Sequence name="say safe disengage" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="Speak" value="safe disengaging" />
+  </Action_Sequence>
+  <Action_Sequence name="boost" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="Tab" />
+    <Action type="KeyUp" value="Tab" />
+    <Action type="Speak" value="boosting" />
+  </Action_Sequence>
+  <Action_Sequence name="request docking" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="D1" />
+    <Action type="KeyUp" value="D1" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="E" />
+    <Action type="KeyUp" value="E" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="E" />
+    <Action type="KeyUp" value="E" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="Space" />
+    <Action type="KeyUp" value="Space" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="S" />
+    <Action type="KeyUp" value="S" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="Space" />
+    <Action type="KeyUp" value="Space" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="Q" />
+    <Action type="KeyUp" value="Q" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="Q" />
+    <Action type="KeyUp" value="Q" />
+    <Action type="Wait" value="300" />
+    <Action type="KeyDown" value="D1" />
+    <Action type="KeyUp" value="D1" />
+  </Action_Sequence>
+  <Action_Sequence name="cut engines" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="X" />
+    <Action type="KeyUp" value="X" />
+  </Action_Sequence>
+  <Action_Sequence name="galaxy map" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="F5" />
+    <Action type="KeyUp" value="F5" />
+  </Action_Sequence>
+  <Action_Sequence name="system map" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="F6" />
+    <Action type="KeyUp" value="F6" />
+  </Action_Sequence>
+  <Action_Sequence name="take screenshot" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="F12" />
+    <Action type="KeyUp" value="F12" />
+    <Action type="Speak" value="took screenshot" />
+  </Action_Sequence>
+  <Action_Sequence name="say hyperjump" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="Speak" value="hyperjumping" />
+  </Action_Sequence>
+  <Action_Sequence name="normal power type" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="Down" />
+    <Action type="KeyUp" value="Down" />
+  </Action_Sequence>
+  <Action_Sequence name="press U" type="VI_Action_Sequence" comment="" random="False">
+    <Action type="KeyDown" value="U" />
+    <Action type="KeyUp" value="U" />
+  </Action_Sequence>
+  <Trigger name="systems" value="systems" type="Phrase" comment="">
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="weapons" value="weapons" type="Phrase" comment="">
+    <Trigger_Event name="weapon type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="engines" value="engines" type="Phrase" comment="">
+    <Trigger_Event name="engine type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="normal power" value="normal power" type="Phrase" comment="">
+    <Trigger_Event name="normal power type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="full shields" value="full shields" type="Phrase" comment="">
+    <Trigger_Event name="normal power type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="full systems" value="full systems" type="Phrase" comment="">
+    <Trigger_Event name="normal power type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="full weapons" value="full weapons" type="Phrase" comment="">
+    <Trigger_Event name="normal power type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="weapon type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="weapon type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="weapon type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="full engines" value="full engines" type="Phrase" comment="">
+    <Trigger_Event name="normal power type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="engine type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="engine type" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="engine type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="shields" value="shields" type="Phrase" comment="">
+    <Trigger_Event name="system type" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="landing gear" value="landing gear" type="Phrase" comment="">
+    <Trigger_Event name="toggle landing gear" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="take screenshot" value="take screenshot" type="Phrase" comment="">
+    <Trigger_Event name="take screenshot" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="safe disengage" value="safe disengage" type="Phrase" comment="">
+    <Trigger_Event name="press J" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="say safe disengage" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="toggle lights" value="toggle lights" type="Phrase" comment="">
+    <Trigger_Event name="press F" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="toggle hardpoints" value="toggle hardpoints" type="Phrase" comment="">
+    <Trigger_Event name="press U" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="engage jumpdrive" value="engage jumpdrive" type="Phrase" comment="">
+    <Trigger_Event name="say hyperjump" type="VI_Action_Sequence" value="" comment="" />
+    <Trigger_Event name="press J" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="boost" value="boost" type="Phrase" comment="">
+    <Trigger_Event name="boost" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="cut engines" value="cut engines" type="Phrase" comment="">
+    <Trigger_Event name="cut engines" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="request docking" value="request docking" type="Phrase" comment="">
+    <Trigger_Event name="request docking" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="galaxy map" value="galaxy map" type="Phrase" comment="">
+    <Trigger_Event name="galaxy map" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+  <Trigger name="system map" value="system map" type="Phrase" comment="">
+    <Trigger_Event name="system map" type="VI_Action_Sequence" value="" comment="" />
+  </Trigger>
+</gavpi>
